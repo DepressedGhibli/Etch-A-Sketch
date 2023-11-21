@@ -1,14 +1,13 @@
 # Etch-A-Sketch
 
-This prototype currently only works for the value of 16
+This prototype works for all vlaues (1 - 100)
 
 it prompts the user for a number ✅
-if the number is 16 it makes the gird 16x16 boxes ✅
-when the grid boxes are hovered over it changeds the colour ✅
-however, due to the current CSS specifications is only able to make a perefect grid of 16x16 ❌
+it creates a grid of boxes with the number✅
+when the grid boxes are hovered over it changes the colour to pink✅
+Made it so the programme dynamically makes divs for each column and that column holds the same number (grid number) of blocks.
 
-To do:
-I plan to make a function that dynamically makes divs for each row and that holds the grid number of blocks.
+
 
 Ways to make better:
 consider removing the ".grid" class and adding the event listener to the divs directly in the loops they are created in.

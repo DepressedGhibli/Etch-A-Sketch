@@ -17,11 +17,17 @@ body{
     height: 640px;
 }
 
-.grid {
-min-width: 40px;
-min-height: 40px;
-background-color: whitesmoke;
+
+
+.column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
+.row {
+    flex: 1;
+}
+
 
 button{
 margin-bottom: 5px;

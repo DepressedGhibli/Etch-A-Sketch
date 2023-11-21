@@ -15,13 +15,16 @@ function colour(event){
 number.addEventListener('click', () => {
     let size = prompt("Pick a grid size between 1 and 100"); 
 
-    for (let i = 0; i < (Math.pow(size, 2)); i++){
-        const div = document.createElement('div');
-         div.classList.add("grid")
-        container.appendChild(div);
-
+    for (let i = 0; i < size; i++){
+        const column = document.createElement('div');
+        column.classList.add("column")
+        for (let j = 0; j < size; j++){
+            const row = document.createElement('div');
+             row.classList.add("row")
+            column.appendChild(row);
+            row.addEventListener("mouseover", colour)
+        }
+        container.appendChild(column);
     }
 
-    const grid = document.querySelectorAll('.grid')
-    grid.forEach(div => div.addEventListener("mouseover", colour))
 })
