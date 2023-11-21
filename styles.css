@@ -1,0 +1,28 @@
+* {
+    background-color: gainsboro;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    box-shadow: 1px 1px 5px;
+    flex-flow: row wrap;
+    width: 640px;
+    height: 640px;
+}
+
+.grid {
+min-width: 40px;
+min-height: 40px;
+background-color: whitesmoke;
+}
+
+button{
+margin-bottom: 5px;
+}
