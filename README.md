@@ -7,6 +7,8 @@ it creates a grid of boxes with the number ✅
 when the grid boxes are hovered over it changes the colour to pink ✅
 Made it so the programme dynamically makes divs for each column and that column holds the same number (grid number) of blocks. ✅
 The divs now change colour randomly with code explained below ✅
+Made it so the Grid is clear when the button is clicked (using a while loop to remove all elements from the container div) ✅
+
 
 line 13 < 'event.target.style.backgroundColor = #'+Math.floor(Math.random()*16777215).toString(16); >
 

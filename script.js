@@ -14,6 +14,10 @@ function colour(event){
     }
 
 number.addEventListener('click', () => {
+    // Remove existing grid
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
 
     let size = prompt("Pick a grid size between 1 and 100"); 
 
