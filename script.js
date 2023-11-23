@@ -8,11 +8,13 @@ const container = document.createElement('div');
 container.classList.add("container")
 body.appendChild(container);
 
+//colour changing function see ReadMe for explanation
 function colour(event){
-    event.target.style.backgroundColor = 'pink'; 
+    event.target.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16); 
     }
 
 number.addEventListener('click', () => {
+
     let size = prompt("Pick a grid size between 1 and 100"); 
 
     for (let i = 0; i < size; i++){
@@ -24,7 +26,6 @@ number.addEventListener('click', () => {
             column.appendChild(row);
             row.addEventListener("mouseover", colour)
         }
-        container.appendChild(column);
+        container.appendChild(column);      
     }
-
 })
